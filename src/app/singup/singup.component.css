@@ -1,0 +1,98 @@
+/* Style for the card container */
+.card-container {
+  max-width: 400px;
+  padding: 20px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* Styling the profile image */
+#profile-img {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+
+/* Form Group styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Input fields styling */
+.form-control {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+.form-control.is-invalid {
+  border-color: #dc3545;
+}
+
+.invalid-feedback {
+  color: #dc3545;
+  font-size: 12px;
+}
+
+/* Success and error message alerts */
+.alert {
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.alert-warning {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+/* Button styling */
+button.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+button.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styling */
+@media (max-width: 576px) {
+  .card-container {
+    padding: 15px;
+  }
+
+  label, .form-control {
+    font-size: 14px;
+  }
+
+  button.btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}

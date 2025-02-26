@@ -1,0 +1,111 @@
+<!-- <a class="nav-link" routerLink="/cart">Cart</a> -->
+
+<!--  -->
+
+  <div class="px-2 py-2 text-black" style="background-color: orange">
+  <a class="fixed-top" routerLink="/home"
+  ><img src="assets/download.jpeg" alt="Logo" width="90px"
+/></a>
+  <div class="d-flex align-items-center">
+    <ul class="nav my-md-0 text-small mx-auto">
+      <li>
+        <a routerLink="/home" class="nav-link text-secondary">
+          <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+            <use xlink:href="#home"></use>
+          </svg>
+          Home
+        </a>
+      </li>
+      <li *ngIf="showAdminBoard">
+        <a routerLink="/deshboard" class="nav-link text-black">
+          <svg class="bi d-block mx-auto mb-1" width="24" height="24"></svg>
+          Deshboard
+        </a>
+      </li>
+      <li *ngIf="showAdminBoard">
+        <a routerLink="/addProduct" class="nav-link text-black">
+          <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+            <use xlink:href="#grid"></use>
+          </svg>
+          Add product
+        </a>
+      </li>
+      <li>
+        <a routerLink="/special_offer" class="nav-link text-black">
+          <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+            <use xlink:href="#table"></use>
+          </svg>
+          Special Offer
+        </a>
+      </li>
+      <li>
+        <a routerLink="/product" class="nav-link text-black">
+          <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+            <use xlink:href="#grid"></use>
+          </svg>
+          Products
+        </a>
+      </li>
+      <li>
+        <a routerLink="/faq" class="nav-link text-black">
+          <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+            <use xlink:href="#people-circle"></use>
+          </svg>
+          FAQ
+        </a>
+      </li>
+      <li>
+        <a routerLink="/contact_us" class="nav-link text-black">
+          <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+            <use xlink:href="#people-circle"></use>
+          </svg>
+          Contact us
+        </a>
+      </li>
+      <li>
+        <li *ngIf="showAdminBoard">
+        <a routerLink="/order" class="nav-link text-black">
+          <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+            <use xlink:href="#people-circle"></use>
+          </svg>
+          Order
+        </a>
+      </li>
+      <li>
+        <a routerLink="/cart" class="nav-link text-black">
+          <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+            <use xlink:href="#people-circle"></use>
+          </svg>
+          <i class="fas fa-shopping-cart"></i> Cart
+          <span class="badge bg-danger"></span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/cart" class="nav-link text-black">
+        
+        </a>
+      </li>
+      <li>
+       
+      </li>
+      
+    </ul>
+    <form class="d-flex">
+      <input class="form-control me-2" type="text" placeholder="Search">
+      <button class="btn btn-primary" type="button">Search</button>
+      <button class="btn btn-primary" type="button" (click)="logout()">Logout</button>
+
+    </form>
+    <!-- <form class="d-flex" (submit)="onSearch()">
+      <input class="form-control me-2" type="text" placeholder="Search" [(ngModel)]="searchQuery" name="search">
+      <button class="btn btn-primary" type="submit">Search</button>
+    </form> -->
+    
+  </div>
+</div>
+
+
+
+  
+  <router-outlet></router-outlet>
+

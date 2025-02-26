@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+.faq {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.faq h3 {
+    color: #333;
+    margin-top: 0;
+}
+.faq p {
+    color: #555;
+    margin: 10px 0;
+}
+.faq table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+}
+.faq table, .faq th, .faq td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 8px;
+}
+.faq th {
+    background-color: #f2f2f2;
+}

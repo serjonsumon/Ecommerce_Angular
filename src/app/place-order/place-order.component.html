@@ -1,0 +1,55 @@
+<!-- <div class="container">
+    <h2>Place Your Order</h2>
+  
+    <form [formGroup]="orderForm" (ngSubmit)="placeOrder()">
+      <label>Full Name:</label>
+      <input type="text" formControlName="fullName" required>
+  
+      <label>Address:</label>
+      <textarea formControlName="address" required></textarea>
+  
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" formControlName="number" required pattern="[0-9]{10}"> -->
+      
+  
+      <!-- <label>Zip Code:</label>
+      <input type="text" formControlName="zipCode" required> -->
+<!--   
+      <label>Payment Method:</label>
+      <select formControlName="paymentMethod">
+         <option value="credit-card">Credit Card</option> -->
+        <!-- <option value="paypal">PayPal</option> -->
+        <!-- <option value="cod">Cash on Delivery</option>
+      </select>
+  
+      <button type="submit">Confirm Order</button>
+    </form>
+  
+    <div *ngIf="orderPlaced" class="confirmation">
+      <h3>Thank you! Your order has been placed.</h3>
+    </div>
+  </div>
+   -->
+
+
+   <h2>Order Summary</h2>
+
+   <div *ngFor="let product of cartItems">
+    <p>{{ product.name }} - ৳{{ product.price }} x {{ product.quantity }}</p>
+    <strong>Total: ৳{{ product.totalAmount }}</strong> <!-- This is the total for each product -->
+  </div>
+  
+  <!-- Overall Total Amount -->
+  <div>
+    <strong>Grand Total: ৳{{ totalAmount }}</strong> <!-- This is the total for all products -->
+  </div>
+
+  <h3>Enter Your Details</h3>
+  <form #orderForm="ngForm">
+    <input type="text" placeholder="Name" [(ngModel)]="customer.name" name="name" required><br>
+    <input type="text" placeholder="Phone Number" [(ngModel)]="customer.phone" name="phone" required><br>
+    <input type="text" placeholder="Address" [(ngModel)]="customer.address" name="address" required><br>
+  
+    <button (click)="confirmOrder()">Confirm Order</button>
+  </form>
+  

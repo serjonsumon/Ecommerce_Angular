@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="headers.css">
+    <link rel="stylesheet" href="sidebars.css">
+    <link rel="stylesheet" href="checkout/signup.html">
+    <script src="sidebars.js"></script>
+
+    <link rel="icon"  href="th.jpeg">
+    <title>Deshboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .product h3 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .price {
+            color: #000;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .old-price {
+            text-decoration: line-through;
+            color: #777;
+            margin-left: 10px;
+            font-size: 16px;
+        }
+        .add-to-bag {
+            display: inline-block;
+            padding: 10px 15px;
+            margin-top: 10px;
+            background-color: #ff5733;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="  px-2 py-2 text-black bg-warning">
+        <a class="fixed-top" href="e_web.html"><img src="download.jpeg" alt="Logo" width="90px"></a>
+       <div class="d-flex align-items-center  ">
+           
+           <ul class="nav    my-md-0 text-small mx-auto">
+
+               
+               <li>
+                   <a href="e_web.html" class="nav-link text-secondary">
+                       <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                           <use xlink:href="#home" />
+                       </svg>
+                       Home
+                   </a>
+               </li>
+               <li>
+                   <a href="Deshboard.html" class="nav-link text-black">
+                       <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                         
+                       </svg>
+                       Dashboard
+                   </a>
+               </li>
+               <li>
+                   <a href="offer.html" class="nav-link text-black">
+                       <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                           <use xlink:href="#table" />
+                       </svg>
+                      Special Offer
+                   </a>
+               </li>
+               <li>
+                   <a href="Products.html" class="nav-link text-black">
+                       <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                           <use xlink:href="#grid" />
+                       </svg>
+                       Products
+                   </a>
+               </li>
+               <li>
+                   <a href="FAQ.html" class="nav-link text-black">
+                       <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                           <use xlink:href="#people-circle" />
+                       </svg>
+                       FAQ
+                   </a>
+               </li>
+               <li>
+                   <a href="About.html" class="nav-link text-black">
+                       <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                           <use xlink:href="#people-circle" />
+                       </svg>
+                       About
+                   </a>
+               </li>
+               <li>
+                   <a href="contact.html" class="nav-link text-black">
+                       <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                           <use xlink:href="#people-circle" />
+                       </svg>
+                       Contact us
+                   </a>
+               </li>
+              
+           </ul>
+       </div>
+   </div>
+
+    <div class="px-3   py-3 sticky-top bg-warning rounded-bottom">
+        <div class="px-3 py-2 mb-3">
+            <div class="container d-flex flex-wrap justify-content-center">
+                <button class="btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                    &#9776;
+                </button>
+                <form class="col-12 col-lg-auto mb-2 mb-lg-0  w-75" role="search">
+                    <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                </form>
+                <div class="dropdown px-1 me-2">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown">
+                        Dhaka
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Use my current Location</a></li>
+                        <li><a class="dropdown-item" href="#">Change City</a></li>
+                    </ul>
+                </div>
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-danger me-2"><a href="signin.html"></a>Sign
+                        in</button>
+                    <button type="button" class="btn btn-outline-danger"><a href="signup.html"></a>Sign
+                        up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <!-- Product 1 -->
+        <div class="product">
+          <a href="Suger.html"><img src="fresh-refined-sugar-1-kg (1).webp" alt="Fresh Refined Sugar"></a>  
+            <h3>Fresh Refined Sugar</h3>
+            <div class="price">৳132</div>
+            <a href="#" class="add-to-bag">Add to bag</a>
+        </div>
+        
+        <!-- Product 2 -->
+        <div class="product">
+          <a href="oil.html"><img src="fresh-fortified-soyabean-oil-5-ltr (1).webp" alt="Fresh Fortified Soyabean Oil"></a>  
+            <h3>Fresh Fortified Soyabean Oil</h3>
+            <div class="price">৳799 <span class="old-price">৳818</span></div>
+            <a href="#" class="add-to-bag">Add to bag</a>
+        </div>
+        
+        <!-- Product 3 -->
+        <div class="product">
+            <a href="Salt.html"><img src="fresh-super-premium-vacuum-salt-1-kg (1).webp" alt="Fresh Super Premium (Vacuum) Salt"></a>
+            <h3>Fresh Super Premium (Vacuum) Salt</h3>
+            <div class="price">৳42</div>
+            <a href="#" class="add-to-bag">Add to bag</a>
+        </div>
+        
+        <!-- Product 4 -->
+        <div class="product">
+           <a href="Maida.html"><img src="fresh-white-flour-maida-2-kg (1).webp" alt="Fresh White Flour (Maida)"></a> 
+            <h3>Fresh White Flour (Maida)</h3>
+            <div class="price">৳132 <span class="old-price">৳144</span></div>
+            <a href="#" class="add-to-bag">Add to bag</a>
+        </div>
+        
+        <!-- Product 5 -->
+        <div class="product">
+           <a href="Water.html"><img src="super-fresh-drinking-water-8-ltr (1).webp" alt="Super Fresh Drinking Water"></a> 
+            <h3>Super Fresh Drinking Water</h3>
+            <div class="price">৳90 <span class="old-price">৳85</span></div>
+            <a href="#" class="add-to-bag">Add to bag</a>
+        </div>
+        
+        <!-- Product 6 -->
+        <div class="product">
+            <a href="Table tissue.html"><img src="bashundhara-paper-napkins-13-unscented-special-offer-100-pcs (1).webp" alt="Fresh Paper Napkins 13'' Perfumed (100X1 Ply)"></a>
+            <h3>Fresh Paper Napkins 13'' Perfumed (100X1 Ply)</h3>
+            <div class="price">৳70</div>
+            <a href="#" class="add-to-bag">Add to bag</a>
+        </div>
+        
+        <!-- Product 7 -->
+        <div class="product">
+            <img src="fresh-premium-moshur-dal-1-kg (1).webp" alt="Fresh Premium Moshur Dal">
+            <h3>Fresh Premium Moshur Dal</h3>
+            <div class="price">৳155</div>
+            <a href="#" class="add-to-bag">Add to bag</a>
+        </div>
+        
+        <!-- Product 8 -->
+        <div class="product">
+            <img src="fresh-hand-towel-1-box (1).webp" alt="Fresh Hand Towel 1 box">
+            <h3>Fresh Hand Towel 1 box</h3>
+            <div class="price">৳90</div>
+            <a href="#" class="add-to-bag">Add to bag</a>
+        </div>
+        <div class="product">
+            88
+           <a href="file:///C:/Users/lenovo/OneDrive/Desktop/Website/Details.html"><img src="fresh-hand-towel-250x1-ply-1-pcs (1).webp" alt="Fresh Hand Towel 1 box"></a> 
+            <h3>Fresh Table Tussue 1 box</h3>
+            <div class="price">৳90</div>
+            <a href="#" class="add-to-bag">Add to bag</a>
+        </div>
+    </div>
+    
+</body>
+
+</html>

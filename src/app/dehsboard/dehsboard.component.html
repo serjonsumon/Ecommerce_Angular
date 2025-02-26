@@ -1,0 +1,148 @@
+<div class="sidebar">
+    <div class="logo">Spodut</div>
+    <ul class="menu">
+        <li><b><u>Dashboard:</u></b></li>
+
+        <li class="active">Products
+            <ul>
+                <li class="active">Product Details</li>
+                <!-- <li>Categories</li> -->
+            </ul>
+        </li>
+        <!-- <li>Sales</li> -->
+        <li>Order</li>
+        <li>Customers</li>
+        <!-- <li>Analytics</li>
+        <li>Notifications</li> -->
+        <li>Settings</li>
+    </ul>
+</div>
+<div class="main-content">
+    <div class="header">
+        <h1>Products Deshboard</h1>
+        <a href="/addProduct" class="nav-link text-black"><button class="add-product">+ Add Product</button></a>
+       
+    </div>
+    <div class="product-list">
+
+        <table class="data-table">
+            <thead>
+              <tr>
+                <th>S/N</th>
+                <th>Name</th>
+                <th>Image</th>
+                <th> Price</th>
+                <th>Stocks</th>
+                <th>Category</th>
+                <th>status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let product of productList">
+                <td>{{product.id}}</td>
+                <td>{{ product.productName }}</td>
+                <td>
+                  <!-- <img [src]="product.image" alt="Product Image" class="product-image" /> -->
+                </td>
+                <td>{{ product.price}}</td>
+                <td>{{ product.stock}}</td>
+                <td>{{ product.category}}</td>
+                <td>{{ product.status}}</td>
+                <td> <a [routerLink]="['/editproduct/', product.id]">
+                    <button >
+                      Edit
+                    </button>
+                  </a>
+                  |
+                  <button (click)="deleteProduct(product.id)">
+                    Delete
+           </button></td>
+    
+              </tr>
+            </tbody>
+    </table>
+        <!-- <table>
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+           
+      
+            
+               <tr>
+                    <td><img src="assets/lal-peyaj.webp"width="150" alt="Sweater"> Lal Peyaj </td>
+      
+                    <td>Lal Peyaj (Onion Red Imported) </td>
+                    <td>65</td>
+                    <td>69 kg</td>
+                    <td><span class="status active">On hand stock</span></td>
+                    <td><a href="#">Edit</a></td>
+                    <td><a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                    <td><img src="assets/potato-regular.webp" width="150" alt="Sweater"> Potato Regular </td>
+                    <td>Potato Regular </td>
+                    <td>25</td>
+                    <td>0 kg</td>
+                    <td><span class="status scheduled">Out of stock</span></td>
+                    <td><a href="#">Edit</a></td>
+                    <td><a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                <td><img src="assets/roshun.webp" width="150"alt="Sweater"> Roshun</td>
+                <td>Roshun (Garlic Imported)</td>
+                <td>175</td>
+                <td>5 kg</td>
+                <td><span class="status draft">Short stock</span></td>
+                <td><a href="#">Edit</a></td>
+                <td><a href="#">Delete</a></td>
+                 </tr>
+                 <tr>
+                                 <td><img src="assets/dhonia-pata.webp" width="150"alt="kochur-mukhi"> Dhonia Pata</td>
+                                        <td>Coriander Leaves (Dhonia Pata)</td>
+                                        <td>100</td>
+                                        <td>10 Kg</td>
+                                        <td><span class="status active">On hand stock</span></td>
+                                        <td><a href="#">Edit</a></td>
+                                        <td><a href="#">Delete</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets/kaca-moric.webp"width="150" alt="Shirt"> Kacha Morich</td>
+                                        <td>Kacha Morich</td>
+                                        <td>55</td>
+                                        <td>86 kg</td>
+                                        <td><span class="status active">On hand stock</span></td>
+                                        <td><a href="#">Edit</a></td>
+                                        <td><a href="#">Delete</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets/fulkopi.webp" width="150"alt="Pant"> Fulkopi</td>
+                                        <td>Fulkopi (Cauliflower)</td>
+                                        <td>30</td>
+                                        <td>5 pics</td>
+                                        <td><span class="status draft">Short stock</span>
+                                        <td><a href="#">Edit</a></td>
+                                        <td><a href="#">Delete</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets/red-tomato.webp"width="150" alt="Sweater"> Red Tomato</td>
+                                        <td>Red Tomato</td>
+                                        <td>40</td>
+                                        <td>69 kg</td>
+                                        <td><span class="status active">On Hand stock</span></td>
+                                        <td><a href ="#">Edit</a></td>
+                                        <td><a href="#">Delete</a></td>
+                                    </tr>
+         		
+            </tbody>
+        </table> -->
+    </div>
+</div>

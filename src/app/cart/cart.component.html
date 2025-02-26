@@ -1,0 +1,113 @@
+<!-- <div class="container mt-4">
+    <h1 class="text-center mb-4">Your Shopping Cart</h1>
+  
+    <div class="row">
+      <div class="col-md-8">
+        <div class="cart-item mb-3" *ngFor="let item of cartItems">
+          <div class="d-flex justify-content-between">
+            <div class="d-flex">
+              <img [src]="item.image" alt="Product Image" width="80" class="me-3" />
+              <div>
+                <h5>{{ item.name }}</h5>
+                <p>Price: ৳{{ (item.price).toFixed(2) }}</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              {{item.quantity}} &nbsp;&nbsp;
+              <input type="number" [(ngModel)]="item.quantity" min="1" class="form-control w-25" (change)="updateTotal()" />
+              <span class="mx-2">x</span>
+              <strong>৳{{ item.total | number: '1.2-2' }}</strong>
+            </div>
+            <button class="btn btn-danger btn-sm" (click)="removeItem(item)">
+              <i class="fas fa-trash-alt"></i> Remove
+            </button>
+          </div>
+          <hr />
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Cart Summary</h4>
+            <div class="d-flex justify-content-between">
+              <p>Subtotal:</p>
+              <p><strong>৳{{ subtotal | number: '1.2-2' }}</strong></p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p>Tax (5%):</p>
+              <p><strong>৳{{ tax | number: '1.2-2' }}</strong></p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p>Total:</p>
+              <p><strong>৳{{ total | number: '1.2-2' }}</strong></p>
+            </div>
+  
+            <button class="btn btn-primary w-100 mt-3" [routerLink]="'/checkout'">
+              Proceed to Checkout
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   -->
+   <!-- <div *ngIf="cartItems.length === 0">
+    <h3>Your cart is empty</h3>
+  </div>
+  
+  <table *ngIf="cartItems.length > 0">
+    <tr>
+      <th>Product</th>
+      <th>Quantity</th>
+      <th>Total Price</th>
+      <th>Actions</th>
+    </tr>
+    <tr *ngFor="let item of cartItems">
+      <td>{{ item.product.name }}</td>
+      <td>
+        <input type="number" [(ngModel)]="item.quantity" (change)="updateQuantity(item.id, item.quantity)">
+      </td>
+      <td>{{ item.totalPrice }}</td>
+      <td>
+        <button (click)="removeItem(item.id)">Remove</button>
+      </td>
+    </tr>
+  </table>
+  
+  <button *ngIf="cartItems.length > 0" (click)="clearCart()">Clear Cart</button>
+   -->
+
+
+   <div *ngIf="cartItems.length > 0; else emptyCart" class="cart-container">
+    <h2>Shopping Cart</h2>
+    <div *ngFor="let item of cartItems" class="cart-item">
+      <img [src]="item.imageUrl" [alt]="item.name" class="cart-item-image" />
+      <div class="cart-item-details">
+        <p class="item-name">{{ item.name }}</p>
+        <p class="item-price">Price: ৳{{ item.price }}</p>
+        <p class="item-total">Total: ৳{{ item.totalPrice }}</p>
+  
+        <!-- Quantity Controls -->
+        <div class="quantity-controls">
+          <button (click)="decreaseQuantity(item.productId)" class="quantity-btn">-</button>
+          <span class="quantity">{{ item.quantity }}</span>
+          <button (click)="increaseQuantity(item.productId)" class="quantity-btn">+</button>
+        </div>
+  
+        <button (click)="removeItem(item.productId)" class="remove-btn">Remove</button>
+      </div>
+    </div>
+  
+    <p class="total-amount">Total Amount: ৳{{ totalAmount }}</p>
+  
+    <!-- Place Order Button -->
+    <button (click)="placeOrder()" class="place-order-btn">Place Order</button>
+  
+    <button (click)="clearCart()" class="clear-cart-btn">Clear Cart</button>
+  </div>
+  
+  <ng-template #emptyCart>
+    <p class="empty-cart-message">Your cart is empty!</p>
+  </ng-template>
+  

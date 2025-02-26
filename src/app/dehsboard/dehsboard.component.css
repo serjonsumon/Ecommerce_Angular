@@ -1,0 +1,164 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #2c3e50;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+}
+
+.sidebar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sidebar .menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar .menu li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebar .menu li:hover,
+.sidebar .menu li.active {
+    background: #1a252f;
+    border-radius: 5px;
+}
+
+.sidebar .menu li ul {
+    list-style: none;
+    padding-left: 15px;
+}
+
+.sidebar .menu li ul li {
+    padding: 8px;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 270px;
+    padding: 20px;
+    width: calc(100% - 270px);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+}
+
+.add-product {
+    padding: 10px 15px;
+    background: #27ae60;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.add-product:hover {
+    background: #219150;
+}
+
+/* Product Table */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.data-table th,
+.data-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.data-table th {
+    background: #34495e;
+    color: white;
+}
+
+.data-table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.data-table tr:hover {
+    background: #f1f1f1;
+}
+
+.product-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Status Styles */
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.status.active {
+    background: #2ecc71;
+    color: white;
+}
+
+.status.scheduled {
+    background: #e67e22;
+    color: white;
+}
+
+.status.draft {
+    background: #e74c3c;
+    color: white;
+}
+
+/* Buttons */
+button {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:first-of-type {
+    background: #2980b9;
+    color: white;
+}
+
+button:last-of-type {
+    background: #c0392b;
+    color: white;
+}

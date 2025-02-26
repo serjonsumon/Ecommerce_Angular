@@ -1,0 +1,121 @@
+/* Container styling */
+.card-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Profile image */
+  .profile-img-card {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Form label */
+  label {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Input styling */
+  .form-control {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  /* Invalid input styling */
+  .is-invalid {
+    border-color: #e74c3c;
+  }
+  
+  /* Invalid feedback message */
+  .invalid-feedback {
+    color: #e74c3c;
+    font-size: 0.875rem;
+  }
+  
+  /* Button styling */
+  .btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Alert messages */
+  .alert {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Success message */
+  .alert-success {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  /* Error message */
+  .alert-danger {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  /* Sign up link */
+  a {
+    text-decoration: none;
+  }
+  
+  button a {
+    color: #007bff;
+    font-size: 1rem;
+  }
+  
+  button a:hover {
+    text-decoration: underline;
+  }
+  /* Centering the button container */
+.button-container {
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    align-items: center; /* Centers the button vertically */
+    height: 100%; /* Ensures that the container takes full height */
+  }
+  
+  /* Style for the button */
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button a {
+    color: white;
+    text-decoration: none; /* Removes underline from the link */
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
