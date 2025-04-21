@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="headers.css">
+    <link rel="stylesheet" href="sidebars.css">
+    <link rel="stylesheet" href="checkout/signup.html">
+    <script src="sidebars.js"></script>
+    <title>Chaldal.com</title>
+    <link rel="icon"  href="th.jpeg">
+  
+    <style>
+        span {
+            display: inline-block;
+            width: 300px;
+            height: 70px;
+            margin: 6px;
+            background-color: #f9f9f9;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* flex-wrap: wrap; */
+
+        }
+
+        .flex-fill {
+            width: 200px;
+            margin: 10px;
+            border: 3px;
+            background-color: #dfdfdf;
+        }
+
+        .div1 {
+            background-color: white;
+        }
+
+        .first-jumbo {
+            background: url(images/jumbo.jpeg);
+        }
+
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="  px-2 py-2 text-black bg-warning">
+        <a class="fixed-top" href="e_web.html"><img src="download.jpeg" alt="Logo" width="90px"></a>
+       <div class="d-flex align-items-center  ">
+           
+           <ul class="nav    my-md-0 text-small mx-auto">
+
+               
+               <li>
+                   <a href="e_web.html" class="nav-link text-secondary">
+                       <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                           <use xlink:href="#home" />
+                       </svg>
+                       Home
+                   </a>
+               </li>
+               <li>
+                   <a href="Deshboard.html" class="nav-link text-black">
+                       <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                         
+                       </svg>
+                       Dashboard
+                   </a>
+               </li>
+               <li>
+                   <a href="offer.html" class="nav-link text-black">
+                       <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                           <use xlink:href="#table" />
+                       </svg>
+                      Special Offer
+                   </a>
+               </li>
+               <li>
+                   <a href="Products.html" class="nav-link text-black">
+                       <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                           <use xlink:href="#grid" />
+                       </svg>
+                       Products
+                   </a>
+               </li>
+               <li>
+                   <a href="FAQ.html" class="nav-link text-black">
+                       <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                           <use xlink:href="#people-circle" />
+                       </svg>
+                       FAQ
+                   </a>
+               </li>
+               <li>
+                   <a href="About.html" class="nav-link text-black">
+                       <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                           <use xlink:href="#people-circle" />
+                       </svg>
+                       About
+                   </a>
+               </li>
+               <li>
+                   <a href="contact.html" class="nav-link text-black">
+                       <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                           <use xlink:href="#people-circle" />
+                       </svg>
+                       Contact us
+                   </a>
+               </li>
+              
+           </ul>
+       </div>
+   </div>
+
+    <div class="px-5  py-3 sticky-top bg-warning rounded-bottom">
+        <div class="px-3 py-2 mb-3">
+            <div class="container d-flex flex-wrap justify-content-center">
+                <button class="btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                    &#9776;
+                </button>
+                <form class="col-12 col-lg-auto mb-2 mb-lg-0  w-75" role="search">
+                    <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                </form>
+                <div class="dropdown px-1 me-2">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown">
+                        Dhaka
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Use my current Location</a></li>
+                        <li><a class="dropdown-item" href="#">Change City</a></li>
+                    </ul>
+                </div><br><br>
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-danger me-3"><a href="E:\Website\signin.html"></a>Sign in</button>
+                    <button type="button" class="btn btn-outline-danger"><a href="signup.html"></a>Sign
+                        up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="landingBanner" style="background:url(https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-531/Default/stores/chaldal/components/landingPage2/LandingPage/images/landingBanner.png) no-repeat center;background-size:cover;" data-reactid=".1vxoxhkxcj2.b.2.0.0.0"><div itemscope="" itemprop="google" content="nositelinkssearchbox" class="floatingSearchBar" data-reactid=".1vxoxhkxcj2.b.2.0.0.0.0"><meta itemprop="url" content="https://chaldal.com/" data-reactid=".1vxoxhkxcj2.b.2.0.0.0.0.0"><div class="searchBarContainer" data-reactid=".1vxoxhkxcj2.b.2.0.0.0.0.1"><h2 data-reactid=".1vxoxhkxcj2.b.2.0.0.0.0.1.0"><p>Grocery Delivered at your Doorstep</p></h2><form itemprop="potentialAction" itemscope="" itemtype="http://schema.org/SearchAction" class="searchArea" data-reactid=".1vxoxhkxcj2.b.2.0.0.0.0.1.1"><table data-reactid=".1vxoxhkxcj2.b.2.0.0.0.0.1.1.0"><tbody><tr data-reactid=".1vxoxhkxcj2.b.2.0.0.0.0.1.1.0.0"><td class="buttonCell" data-reactid=".1vxoxhkxcj2.b.2.0.0.0.0.1.1.0.0.1"><svg class="search" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" data-reactid=".1vxoxhkxcj2.b.2.0.0.0.0.1.1.0.0.1.0.0"><path d="M44.5,78.5c-18.8,0-34-15.3-34-34s15.3-34,34-34s34,15.3,34,34S63.3,78.5,44.5,78.5z M44.5,18.1  C30,18.1,18.2,30,18.2,44.5S30,70.8,44.5,70.8S70.9,59,70.9,44.5S59,18.1,44.5,18.1z" data-reactid=".1vxoxhkxcj2.b.2.0.0.0.0.1.1.0.0.1.0.0.0"></path><path d="M87.2,91c-1,0-2-0.4-2.7-1.1L63.1,68.5c-1.5-1.5-1.5-3.9,0-5.4s3.9-1.5,5.4,0l21.3,21.3  c1.5,1.5,1.5,3.9,0,5.4C89.2,90.6,88.2,91,87.2,91z" data-reactid=".1vxoxhkxcj2.b.2.0.0.0.0.1.1.0.0.1.0.0.1"></path></svg></button></td></tr></tbody></table></form></div></div><div class="banner-image" data-reactid=".1vxoxhkxcj2.b.2.0.0.0.1"><img src="imageBanner.webp" height="400px"  class="justify-content: center">
+
+    </div></div>
+
+  
+     
+              
+
+
+    <div>
+        <div class="offcanvas offcanvas-start text-bg-dark bg-warning rounded-5" id="demo">
+            <div class="offcanvas-header" style="color: black;">
+                <h1 class="offcanvas-title">About</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body" style="color: black;">
+                <p>Grocery</p>
+                <p>Pharmacy</p>
+                <p>Cookups</p>
+                <button class="btn btn-danger" type="button">More</button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="container">
+        <div class="d-flex p-5" style="text-align: center;">
+            <div class="p-5 flex-fill flex-container rounded-4"><strong><code>+15000 products</code> to shop
+                    from</strong></div>
+            <div class="p-5 flex-fill flex-container rounded-4"><strong>Pay <code>after</code> receiving
+                    products</strong></div>
+            <div class="p-5 flex-fill flex-container rounded-4"><strong>Get your delivery within
+                    <code>1 hour</code></strong></div>
+            <div class="p-5 flex-fill flex-container rounded-4"><strong>Get offers that <code>Save Money</code></strong>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h4 style="text-align: center;">Popular Categories</h4>
+        <div class="container">
+            <div class="d-flex p-5 flex-container" style="text-align: center;">
+                <div class=" p-5 rounded-4">
+                    <img src="fruitsAndVegs.webp" width="150" alt="Vegetables">
+                    <div>Fruits & Vegetables</div>
+                </div>
+                <div class=" p-5 rounded-4">
+                    <img src="meatAndFish.webp" width="150" alt="fish">
+                    <div>Meat & Fish</div>
+                </div>
+                <div class=" p-5 rounded-4">
+                    <img src="cooking.webp" width="150" alt="cooking">
+                    <div>Cooking</div>
+                </div>
+                <div class=" p-5 rounded-4">
+                    <img src="beverages.webp" width="150" alt="Cleaning">
+                    <div>Beverages</div>
+                </div>
+                <div class=" p-5 rounded-4">
+                    <img src="home-cleaning.webp" width="150" alt="Pest">
+                    <div>Home & Cleaning</div>
+                </div>
+                <div class=" p-5 rounded-4">
+                    <img src="pest-control.webp" width="150" alt="Stationery">
+                    <div>Pest Control</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h4 style="text-align: center;">Popular on Chaldal</h4>
+        <div class="container">
+            <div1 class="d-flex p-5 flex-container" style="text-align: center;">
+                <div class="wrapper p-3 rounded-4">
+                    <img src="pran.webp" width="75" alt="pran">
+                </div>
+                <div class="wrapper p-2 rounded-4">
+                    <img src="nestle.webp" width="75" alt="Nestle">
+
+                </div>
+                <div class="wrapper p-2 rounded-4">
+                    <img src="uniliver.webp" width="75" alt="Unilever">
+
+                </div>
+                <div class="wrapper p-2 rounded-4">
+                    <img src="marico.webp" width="75" alt="marico">
+
+                </div>
+                <div class="wrapper p-2 rounded-4">
+                    <img src="reckitt.webp" width="75" alt="cocacola">
+
+                </div>
+                <div class="wrapper p-2 rounded-4">
+                    <img src="godrej-seeklogo.webp" width="75" alt="fresh">
+
+                </div>
+            </div1>
+        </div>
+    </div>
+
+    <div>
+        <h4 style="text-align: center;">Shop & Get More</h4>
+        <div class="container">
+            <div class="row gy-3 p-5">
+                <div class="col-md-4">
+                    <div class="card rounded-3" style="width: 20px height: 25px;"> 
+                        <h5 class="card-title">Shop & Earn Points</h5>
+                        <div class="card-body">
+                            <p class="card-text">The more you shop the more you earn - cash back, free shipping,
+                                exclusive offers and more. Discover the perks of <strong>Egg Club</strong> membership.
+                            </p>
+                        </div>
+                        <img src="image.webp" class="card-img-top" alt="Shop">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card rounded-3" style="width: 20px height: 25px;">
+                        <h5 class="card-title">Amazing Daily Deals</h5>
+                        <div class="card-body">
+                            <p class="card-text">Stock up on your favorite groceries for less with our unbeatable daily
+                                deals! Don't miss out - limited stock</p>
+                        </div>
+                        <img src="dailyDealsShopInfo.webp" class="card-img-top" alt="DailyDeals">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card rounded-3" style="width: 20px height: 25px;">
+                        <h5 class="card-title">Premium Care</h5>
+                        <div class="card-body">
+                            <p class="card-text">Too busy to place an order or handling order issues no need to worry as
+                                we give you option to take premium assistance.</p>
+                        </div>
+                        <img src="premiumImage.webp" class="card-img-top" alt="PremiumCard">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-3">
+        <h2 class="py-3" style="text-align: center;" id="first-jumbo"></h2>
+        <div class="row py-3">
+            <div class="row align-items-md-stretch">
+                <div class="col-md-6">
+                    <div class="h-100 p-5 bg-light border rounded-4">
+                        <h4>Shop your daily necessities</h4>
+                        <p>Shop from our popular category, Explore special offers and receive grocery on your doorsteps
+                            within 1 hour.</p>
+                        <button class="btn btn-outline-danger" type="button">Start Shopping</button>
+                    </div>
+                </div>
+                <div class="col embed-responsive">
+                    <iframe class="embed-responsive-item rounded-4" width="400" height="270"
+                        src="https://www.youtube.com/embed/-Xg2kGPwePM?si=2IM6SlvsYSFJMKW5" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid py-4">
+        <div class="p-5 mb-4 bg-warning rounded-5 row">
+            <div class="m-5">
+                <img src="downloadApp.webp" alt="App" height="250px" width="300px"
+                    style="float: right;" class="me-5">
+                <h1 class="display-5 fw-bold">Download The Chaldal App Now!</h1>
+                <p>Get 5% off on your first order through the Chaldal app and make your shopping
+                    experience even smoother!</p>
+                <button class="btn btn-dark btn-lg" type="button">App Store</button>
+                <button class="btn btn-dark btn-lg" type="button">Google Play</button>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="d-flex p-5" style="text-align: center;">
+            <div class="p-5 flex-fill flex-container rounded-4">
+                <h4>26 warehouses</h4>
+                <p>all over bangladesh</p>
+            </div>
+            <div class="p-5 flex-fill flex-container rounded-4">
+                <h4>5 million orders</h4>
+                <p>have been delivered</p>
+            </div>
+            <div class="p-5 flex-fill flex-container rounded-4">
+                <h4>100,000 families</h4>
+                <p>are being served</p>
+            </div>
+            <div class="p-5 flex-fill flex-container rounded-4">
+                <h4>340 million Taka</h4>
+                <p>customer savings</p>
+            </div>
+        </div>
+    </div>
+    <div class="cityBox" style="background: url(&quot;https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-526/Default/stores/chaldal/components/landingPage2/LandingPage/images/city-background.png&quot;) center center / cover no-repeat; height: 350px;" data-reactid=".11blreb722c.b.2.0.0.a"><div class="cityArea" data-reactid=".11blreb722c.b.2.0.0.a.0"><h2 data-reactid=".11blreb722c.b.2.0.0.a.0.0">Currently Delivering in</h2><div class="deliveryCity" data-reactid=".11blreb722c.b.2.0.0.a.0.1"><div class="cityContainer" data-reactid=".11blreb722c.b.2.0.0.a.0.1.0">Dhaka</div><div class="cityContainer" data-reactid=".11blreb722c.b.2.0.0.a.0.1.1">Chattogram</div><div class="cityContainer" data-reactid=".11blreb722c.b.2.0.0.a.0.1.2">Jashore</div></div></div></div>
+
+    <div id="accordion" class="container-fluid py-4 p-5 mb-4">
+        <h4 style="text-align: center;">Common Questions</h4>
+
+        <div class="card">
+            <div class="card-header">
+                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                    Q. How much do deliveries cost?
+                </a>
+            </div>
+            <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                <div class="card-body">
+                    A. The delivery fee across the country is in the table below:
+                    +------------+---------+---------+
+                    | | Orders | Orders |
+                    | | below | above |
+                    | | 400 | 400 |
+                    +------------+---------+---------+
+                    | Dhaka | 49 | 39 |
+                    +------------+---------+---------+
+                    | Chattagram | 29 | 19 |
+                    +------------+---------+---------+
+                    | Jashore | 29 | 19 |
+                    +------------+---------+---------+
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                    Q. What are your delivery hours?
+                </a>
+            </div>
+            <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                    We deliver from 7.30 am to 11 pm every day. You can choose from available slots to find something
+                    that is convenient for you.
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                    Q. What is your policy on refunds?
+                </a>
+            </div>
+            <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                    We offer a refund or return policy of seven (7) days on most unopened or unspoilt packaged products.
+                    For perishable products such as milk, fruits, and fresh vegetables, we have a 1 (one) day return
+                    policy.
+                    Diaper items must be returned for refunds before 10% or 3 pieces (whichever comes first) have been
+                    used.
+                    Certain products; Face Mask, Disposable Vinyl Gloves, Alcohol Pads, and Covid Testing Kits are not
+                    acceptable for refund or return either opened or unopened.
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour">
+                    Q. What about the prices?
+                </a>
+            </div>
+            <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                    Our prices are our own but we try our best to offer them to you at or below market prices. Our
+                    prices are the same as the local market and we are working hard to get them even lower! If you feel
+                    that any product is priced unfairly, please let us know.
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFive">
+                    Q. Do you serve my area?
+                </a>
+            </div>
+            <div id="collapseFive" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                    We are currently serving in three big cities of Bangladesh including Dhaka, Chattogram, Jashore.
+                </div>
+            </div>
+        </div>
+
+        <a style="text-align: center; color: red;" href="#">Have further questions?</a>
+
+        <div>
+            <h4 style="text-align: center;">Be part of the Chaldal Family!</h4>
+            <div class="container mb-3">
+                <h2 class="py-3" style="text-align: center;" id="first-jumbo"></h2>
+                <div class="row py-3">
+                    <div class=" col-sm-6 p-3 align-items-md-stretch" >
+                        <div class="row  p-5 bg-light border rounded-4" style="height: 300px;">
+                            <div class="col-sm-6">
+                                <h4>Corporate</h4>
+                                <p>Do you own a business? Become a corporate customer</p>
+                                <button class="btn btn-danger" type="button">Find out more</button>
+                            </div>
+                            <div class="col-sm-6">
+                                <img style="align-items: end;" src="corporateImage.webp" width="100%" alt="corporate">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class=" col-sm-6 p-3 align-items-md-stretch"  >
+
+
+                        <div class="row  p-5 bg-light border rounded-4" style="height: 300px;">
+                            <div class="col-sm-6">
+                                <h4>Career</h4>
+                                <p>Work with a team that works to improve the lives of our consumers and the
+                                    communities around us.</p>
+                                <button class="btn btn-danger" type="button">Find out more</button>
+                            </div>
+                            <div class="col-sm-6">
+                                <img style="align-items: end;" src="careerImage.webp" width="100%" alt="corporate">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Center-aligned -->
+    <div class="container mt-3">
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+            <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+            <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+        </ul>
+    </div>
+
+
+    <div class="b-example-divider bg-warning"></div>
+
+    <div class="container">
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>About Chaldal</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Our Story</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Team</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy Policy</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terms of Use</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Customer Service</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact Us</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQ</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>For Business</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Corporate</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5>Payment Methods</h5>
+                        <!-- <p>Monthly digest of what's new and exciting from us.</p> -->
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="number" class="visually-hidden">Number</label>
+                            <input id="number" type="text" class="form-control" placeholder="Number">
+                            <button class="btn btn-danger" type="button">Submit</button>
+                        </div>
+                        <br>
+                        <div style="text-align: end;">
+                            <button class="btn btn-dark" type="button">App Store</button>
+                            <button class="btn btn-dark" type="button">Google Play</button>
+                            <br><br>
+                            <h6>Phone: 16710</h6>
+                            <p>or support@chaldal.com</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>&copy; 2013 Chaldal Limited</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#twitter" />
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#instagram" />
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#facebook" />
+                            </svg></a></li>
+                </ul>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                <symbol id="bootstrap" viewBox="0 0 118 94">
+                    <title>Bootstrap</title>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z">
+                    </path>
+                </symbol>
+                <symbol id="facebook" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                </symbol>
+                <symbol id="instagram" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                </symbol>
+                <symbol id="twitter" viewBox="0 0 16 16">
+                    <path
+                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                </symbol>
+            </svg>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
